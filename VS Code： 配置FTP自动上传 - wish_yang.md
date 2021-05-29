@@ -8,12 +8,30 @@
 
 四：修改json文件的配置：
 
-![复制代码](https://common.cnblogs.com/images/copycode.gif)
-
-{ "name": "centos7",//设置名字 "host": "192.168.244.111",//服务器IP "protocol": "sftp",//ftp模式还是sftp模式 "port": 22,//ftp:21 sftp:22 "username": "root", //ftp用户名 "password": "123456", //ftp密码 "passive": false, "interactiveAuth": true, "remotePath": "/root/ftp",//服务器目录 "ignore": \[ "\*\*/.vscode/\*\*", "\*\*/.git/\*\*", "\*\*/.DS\_Store" \],//忽略文件 "uploadOnSave": true, "syncMode": "update", "watcher": { "files": "glob", "autoUpload": true, "autoDelete": true }
+```java
+{
+    "name": "centos7",
+    "host": "192.168.64.ip",
+    "protocol": "sftp",
+    "port": 22,
+    "username": "root",
+    "password": "******", 
+    "passive": false, 
+    "interactiveAuth": true,
+    "remotePath": "/flink1124",
+    "ignore": [
+        "**/.vscode/**",
+        "**/.git/**",
+        "**/.DS_Store"
+    ],
+    "uploadOnSave": true,
+    "syncMode": "update",
+    "watcher": {
+        "files": "glob",
+        "autoUpload": true,
+        "autoDelete": true
+    }
 }
-
-![复制代码](https://common.cnblogs.com/images/copycode.gif)
 
 五：可以点击左侧红框看到上传的文件。
 
